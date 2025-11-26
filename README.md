@@ -1,22 +1,50 @@
-# DIO - Trilha .NET - Programação orientada a objetos
-www.dio.me
+# Desafio de Projeto: Abstraindo um Celular com POO em .NET
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de orientação a objetos, da trilha .NET da DIO.
+Este projeto foi desenvolvido como parte do desafio de Programação Orientada a Objetos (POO) da trilha .NET da [Digital Innovation One (DIO)](https://www.dio.me/).
 
-## Contexto
-Você é responsável por modelar um sistema que trabalha com celulares. Para isso, foi solicitado que você faça uma abstração de um celular e disponibilize maneiras de diferentes marcas e modelos terem seu próprio comportamento, possibilitando um maior reuso de código e usando a orientação a objetos.
+O objetivo principal foi aplicar os pilares da POO (Abstração, Encapsulamento, Herança e Polimorfismo) para criar um sistema que modela o comportamento de diferentes smartphones.
 
-## Proposta
-Você precisa criar um sistema em .NET, do tipo console, mapeando uma classe abstrata e classes específicas para dois tipos de celulares: Nokia e iPhone. 
-Você deve criar as suas classes de acordo com o diagrama abaixo:
+## 🚀 Tecnologias Utilizadas
+*   **C#**: Linguagem de programação principal.
+*   **.NET**: Plataforma de desenvolvimento.
 
-![Diagrama classes](Imagens/diagrama.png)
+## 💻 Sobre o Projeto
 
-## Regras e validações
-1. A classe **Smartphone** deve ser abstrata, não permitindo instanciar e servindo apenas como modelo.
-2. A classe **Nokia** e **Iphone** devem ser classes filhas de Smartphone.
-3. O método **InstalarAplicativo** deve ser sobrescrito na classe Nokia e iPhone, pois ambos possuem diferentes maneiras de instalar um aplicativo.
+A aplicação simula a representação de dois modelos de celular, um Nokia e um iPhone, a partir de uma classe abstrata `Smartphone`.
 
-## Solução
-O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+### Estrutura das Classes
+
+*   `Smartphone` (Classe Abstrata):
+    *   Serve como modelo base para todos os celulares.
+    *   Contém propriedades comuns como `Numero`, `Modelo`, `IMEI` e `Memoria`.
+    *   Possui métodos concretos como `Ligar()` e `ReceberLigacao()`.
+    *   Define um método abstrato `InstalarAplicativo(string nomeApp)`, que deve ser implementado pelas classes filhas.
+
+*   `Nokia` e `Iphone` (Classes Concretas):
+    *   Heram da classe `Smartphone`.
+    *   Implementam (sobrescrevem) o método `InstalarAplicativo(string nomeApp)` com um comportamento específico para cada marca, demonstrando o polimorfismo.
+
+O diagrama de classes que guiou o desenvolvimento foi o seguinte:
+
+!Diagrama de Classes
+
+## ▶️ Como Executar
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/Rs134-sa/trilha-net-poo-desafio.git
+    ```
+
+2.  **Navegue até o diretório do projeto:**
+    ```bash
+    cd trilha-net-poo-desafio
+    ```
+
+3.  **Execute a aplicação:**
+    ```bash
+    dotnet run
+    ```
+
+## ✨ Agradecimentos
+
+Agradeço à DIO pela oportunidade de aprendizado e pelo desafio proposto, que foi fundamental para consolidar os conhecimentos em Programação Orientada a Objetos com .NET.
