@@ -48,3 +48,8 @@ O diagrama de classes que guiou o desenvolvimento foi o seguinte:
 ## ✨ Agradecimentos
 
 Agradeço à DIO pela oportunidade de aprendizado e pelo desafio proposto, que foi fundamental para consolidar os conhecimentos em Programação Orientada a Objetos com .NET.
+
+
+## 👨‍💻 Autoria
+
+Feito por [Raiane de Sá](https://github.com/Raiane-S) - Conecte-se comigo no [LinkedIn](https://www.linkedin.com/in/raiane-s/)!
